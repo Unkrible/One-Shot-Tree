@@ -197,6 +197,7 @@ class HierarchicalTree(pl.LightningModule, ScorerMixin):
         self.log('train_loss', loss)
         return loss
 
+<<<<<<< HEAD
     def on_train_epoch_end(self, outputs):
         self.log_arch_params()
 
@@ -205,6 +206,8 @@ class HierarchicalTree(pl.LightningModule, ScorerMixin):
         # tensorboard.add_histogram("gamma", torch.cat(list(self.root.gamma_parameters()), dim=0))
         # tensorboard.add_histogram("omega", torch.cat(list(self.root.omega_parameters()), dim=0))
 
+=======
+>>>>>>> 35b318a... feat: init project
     def validation_step(self, batch, batch_idx):
         loss = self.sharing_step(batch, batch_idx)
         self.log('val_loss', loss)

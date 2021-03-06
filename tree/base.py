@@ -123,6 +123,7 @@ class ArchOptimizer(pl.callbacks.Callback):
 
         self.restore(pl_module.root)
         self.optimizer.step()
+<<<<<<< HEAD
 
     # def on_train_epoch_start(self, trainer, pl_module):
         # tensorboard = pl_module.logger.experiment
@@ -146,3 +147,5 @@ class ArchOptimizer(pl.callbacks.Callback):
     #
     #         self.restore(pl_module.root)
     #         self.optimizer.step()
+=======
+>>>>>>> 35b318a... feat: init project
